@@ -1,0 +1,243 @@
+
+@font-face {
+    font-family: 'parisienneregular';
+    src: url('parisienne-regular-webfont.woff2') format('woff2'),
+         url('parisienne-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image:url("/home/bentaleb/Desktop/portfolio imgs/black _background.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 65px 650px 60px 950px 60px 450px 60px 600px;
+    color: white;
+}
+nav li{
+    display: inline-block;
+    margin-left: 5%;
+    font-family: cursive;
+    font-size: 2em;
+    margin-top:1%;
+    
+ 
+}
+nav ul{
+    list-style: none;
+    margin-left: 20%;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    background-color: burlywood;
+}
+nav{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    background-color:coral;
+    position: sticky;
+    top: 0;
+    width:100%;
+}
+.pic{
+    border: solid coral;
+    border-radius: 50px;
+    grid-column: 3/2;
+    grid-row: 2/3;
+    margin-top: 6%;
+    margin-left:3%;
+}
+.presentation{
+    grid-column: 1/6;
+    grid-row: 2/3;
+}
+.presentation p{
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+    right: 10%;
+    font-family:parisienneregular;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+.presentation h1{
+    position: absolute;
+    left:45%;
+    bottom: 80%;
+    font-family:parisienneregular;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.presentation h2{
+    position:absolute;
+    left:40%;
+    bottom: 75%;
+    font-family:parisienneregular;
+    font-size: 2.5em;
+    font-weight: bold;
+
+}
+/* social media*/
+#contact{ 
+    grid-column: 1/6;
+    grid-row: 3/4;
+    background-color: coral;
+}
+   
+#contact{
+    display: flex;
+    justify-content: space-around;
+}
+#contact img{
+    padding-top:10px;
+}
+#contact h2{ 
+    font-family: cursive;
+}
+/* Expériences using collapse cordion bootstrap*/
+section{
+    grid-column: 1/6;
+    
+}
+section aside{
+    margin-left: 22%;
+}
+section{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 3%;
+    font-family: parisienneregular;
+ 
+}
+article li, aside li{
+    font-size: 1.5em;
+}
+aside img{
+    margin-left: 10%;
+
+}
+/*Formation with flip card*/
+#formation{
+    grid-column: 1/6;
+    margin-top: -65%;
+}
+    
+    
+#formation h2{
+    margin-top: 80%;
+    font-size: 2em;
+    
+}
+
+.desc{
+    color: black;
+    margin-top: 3%;
+
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-top: 75%;
+    margin-bottom: 10%;
+
+  }
+ 
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: coral;
+    color:black;
+    transform: rotateY(180deg);
+    font-family: cursive;
+
+  }
+  .flip-card-back p{
+      font-size: 2em;
+      font-weight: bold;
+  }
+  .flip-card-back h3, h4{
+    font-size: 2em;
+    font-weight: bold;
+}
+/* Compétences using rating */
+#compétences{
+    grid-column: 1/6;
+    grid-row: 8/9;
+}
+#compétences{
+   
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+#compétence h2{
+    margin-top: 5%;
+}
+#compétences h3 h4{
+    justify-content: center;
+    text-align: center;
+    width: 55%;
+}
+
+#codage{
+    margin-left: 60%;
+    width: 30%;
+    position: absolute;
+}
+#communication{
+    margin-left: 15%;
+    width: 30%;
+}
+.checked {
+    color: orange;
+  }
+  #main{
+      grid-column: 1/6;
+      background-color: coral;
+  }
+#test{
+    grid-column: 1/6;
+      grid-row: 7/8;
+      background-color: coral;
+}
+#mega{
+    grid-column: 1/6;
+    grid-row: 9/10;
+    background-color: coral;
+}
+
+
+
